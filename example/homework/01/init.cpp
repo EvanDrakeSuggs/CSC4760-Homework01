@@ -6,9 +6,9 @@
 int main(int argc, char* argv[]) {
   Kokkos::initialize(argc, argv);
   {
-    // Create a Kokkos View with 1 element
+    // Make View
     Kokkos::View<int*> view("view");
-    // Print out the name of the view
+    // print name
     std::cout << "View label: " << view.label() << std::endl;
   }
   Kokkos::finalize();
